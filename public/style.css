@@ -34,25 +34,21 @@ body {
   padding: 20px;
   border-radius: 5px;
   text-align: center;
-  background: white;
+  background: rgba(245,245,220,1);
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.results-container a:hover {
+  background: rgba(200,200,180,1);
+  transform: scale(1.05);
 }
 
 .results-image {
   width: 107px;
   height: 80px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-  transition: 500ms;
-  background: rgba(0,0,0,0);
-}
-
-a:hover {
-  background: rgba(245,245,220,1);
-  transform: scale(1.05);
 }
 
 .results-image {

@@ -37,6 +37,11 @@ body {
   background: white;
 }
 
+.results-image {
+  width: 107px;
+  height: 80px;
+}
+
 a {
   text-decoration: none;
   color: black;

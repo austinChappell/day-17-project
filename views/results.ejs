@@ -10,7 +10,11 @@
   <a href="<%= result.href %>">
   <div class="result-item">
       <h2><%= result.title %></h2>
-      <img class="results-image" src="<%= result.thumbnail %>" />
+      <% if (result.thumbnail === '') { %>
+        <img class="results-image" src="/assets/placeholder.jpeg" />
+      <% } else { %>
+        <img class="results-image" src="<%= result.thumbnail %>" />
+      <% }; %>
       <p><strong>Ingredients</strong> - <%= result.ingredients %>.</p>
   </div>
 </a>

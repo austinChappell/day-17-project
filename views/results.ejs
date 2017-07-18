@@ -1,0 +1,20 @@
+<% include partials/header %>
+
+<form class="" action="/" method="POST">
+  <input class="search-input" type="search" name="search" placeholder="search recipes" />
+  <button class="submit-button">Search</button>
+</form>
+
+<div class="results-container">
+<% results.forEach(function(result) { %>
+  <a href="<%= result.href %>">
+  <div class="result-item">
+      <h2><%= result.title %></h2>
+      <img class="results-image" src="<%= result.thumbnail %>" />
+      <p><strong>Ingredients</strong> - <%= result.ingredients %>.</p>
+  </div>
+</a>
+<% }); %>
+</div>
+
+<% include partials/header %>
